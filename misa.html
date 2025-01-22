@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISA GARDEN </title>
+    <link rel="icon" href="./pic-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.animated { width: 100px;
+   height: 100px;
+    background-color: #3498db;
+     margin: 50px;
+      position: absolute; 
+      top: 0;
+       left: 50%;
+        transform: translateX(-50%); }
+body{
+    overflow-x: hidden;
+}
+     button{
+        width: 110px;
+        height: 40px;
+        margin-left: 20px;
+    }
+   
+    .btn{
+        background-color: #447804;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .ba{
+        margin-left: 200px;
+    }
+    .a{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .nav-item{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .bag{
+        background-color: #305700;
+        margin-top: 20px;
+    }
+    .bf{
+        color: white;
+    }
+ 
+    .ras{
+      margin: 30px 0;
+    }
+    .baat{
+      width: 120px;
+      margin-left: 10px;
+      height: 40px;
+    }
+    .baat:hover{
+      background-color: #264600;
+    }
+   
+
+
+        #section1 {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 90%;
+                
+            }
+
+            #section1 h1 {
+                font-size: 80px;
+                top: 20%;
+                left: 35%;
+                margin-top: 200px;
+                margin-left: 430px;
+                font-weight: 800;
+            }
+
+            #secpic1 {
+                height: 300px;
+                position: absolute;
+                top: 20%;
+                left: 82%;
+                transform: rotate(70deg);
+            }
+
+            #secpic2 {
+                height: 300px;
+                position: absolute;
+                top: 10%;
+                left: -4%;
+                transform: rotate(90deg);
+            }
+
+            #secpic3 {
+                height: 300px;
+                position: absolute;
+                top: 60%;
+                left: 82%;
+            }
+
+            #secpic6 {
+                height: 300px;
+                position: absolute;
+                top: 60%;
+                left: -5%;
+                transform: rotate(90deg);
+            }
+
+            #secpic4 {
+                height: 500px;
+                position: absolute;
+                top: 30%;
+                left: 40%;
+                opacity: 0.5;
+            }
+
+            #secpic7 {
+                height: 300px;
+                position: absolute;
+                top: 60%;
+                left: 45%;
+            }
+
+        
+        #section2 {
+            width: 100%;
+            height: 100%;
+            background-color: #dfffb1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #head h1 {
+            font-size: 65px;
+            font-weight: 800;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #sec2pic1 {
+            height: 350px;
+            margin: 20px 0;
+            position: relative;
+            left: -20%;
+        }
+        #sec2pic2{
+          height: 400px;
+            margin: 20px 0;
+            position: relative;
+            bottom: 100%;
+            left: 30%;
+        }
+
+        #text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        #text h1 {
+            font-weight: 600;
+            margin: 20px 0;
+            position: relative;
+            top: -61%;
+            left: -22%;
+            font-size: xx-large;
+        }
+
+        #text p {
+            margin: 20px 0;
+            position: relative;
+            top: -60%;
+            left: -20%;
+            text-align: left;
+        }
+
+        #btun {
+            width: 250px;
+            margin: 20px auto;
+            position: relative;
+            top: -100%;
+            text-align: center;
+        }
+
+      
+        #section3 {
+            width: 100%;
+            height: 100%;
+            background-color: #f7ffec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #head1 h1 {
+            font-size: 65px;
+            font-weight: 800;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #sec3pic1 {
+          height: 350px;
+            margin: 20px 0;
+            position: relative;
+            left: -20%;
+        }
+        #sec3pic2{
+          height: 400px;
+            margin: 20px 0;
+            position: relative;
+            bottom: 100%;
+            left: 30%;
+        }
+
+        #text2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        #text2 h1 {
+          font-weight: 600;
+            margin: 20px 0;
+            position: relative;
+            top: -61%;
+            left: -22%;
+            font-size: xx-large;
+        }
+
+        #text2 p {
+          margin: 20px 0;
+            position: relative;
+            top: -60%;
+            left: -20%;
+            text-align: left;
+        }
+
+#btun1{
+  width: 250px;
+            margin: 20px auto;
+            position: relative;
+            top: -100%;
+            text-align: center;
+}
+
+#section4{
+  width: 100%;
+            height: 100%;
+            background-color: #beff62;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+#head2 h1{
+  font-size: 65px;
+            font-weight: 800;
+            padding: 30px;
+            text-align: center;
+}
+#sec4pic1{
+  height: 350px;
+            margin: 20px 0;
+            position: relative;
+            left: -20%;
+}
+#sec4pic2{
+  height: 400px;
+            margin: 20px 0;
+            position: relative;
+            bottom: 100%;
+            left: 30%;
+           
+}
+ #text3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+#text3 h1{
+  font-weight: 600;
+            margin: 20px 0;
+            position: relative;
+            top: -61%;
+            left: -22%;
+            font-size: xx-large;
+
+}
+#text3 p{
+  margin: 20px 0;
+            position: relative;
+            top: -60%;
+            left: -20%;
+            text-align: left;
+
+}
+
+#btun2{
+  width: 250px;
+            margin: 20px auto;
+            position: relative;
+            top: -100%;
+            text-align: center;
+}
+
+
+#page5{
+    width: 100%;
+}
+
+#page5 h1{
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: monospace;
+}
+#section5{
+  width: 100%;
+            height: 100%;
+            background-color: #beff62;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+#sec5pic1{
+  height: 300px;
+    margin-left: -700px;
+    border-radius: 20px;
+}
+
+#sec5pic2{
+  position: relative;
+    height: 300px;
+    top: -299px;
+    margin-left: 700px;
+    border-radius: 20px;;
+}
+#head3 h1{
+  font-size: 65px;
+            font-weight: 800;
+            padding: 30px;
+            text-align: center;
+}
+
+.han{
+  height: 350px;
+            margin: 20px 0;
+            position: relative;
+            left: -20%;
+}
+.hann{
+  height: 400px;
+            margin: 20px 0;
+            position: relative;
+            top: -65%;
+            left: 30%;
+}
+#btun3{
+  width: 250px;
+            margin: 20px auto;
+            position: relative;
+            top: -30%;
+            text-align: center;
+}
+
+.ans{
+      margin-left: 90%;
+    }
+
+@media (max-width: 869px) {
+
+body{
+  overflow-x: hidden;
+}
+
+.a {
+  font-size: 28px;
+font-weight: 800;
+}
+  #section1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 30%;
+  }
+
+  #section1 h1 {
+    font-size: 34px;
+        margin-top: 100px;
+        margin-left: 273px;
+        font-weight: 800;
+  }
+
+  #secpic1 {
+    height: 120px;
+        position: absolute;
+        top: 10%;
+        left: 88%;
+        transform: rotate(70deg);
+  }
+
+  #secpic2 {
+      height: 120px;
+      position: absolute;
+      top: 10%;
+      left: -3%;
+      transform: rotate(90deg);
+  }
+
+  #secpic3 {
+    height: 120px;
+        position: absolute;
+        top: 35%;
+        left: 87%;
+  }
+
+  #secpic6 {
+    height: 120px;
+        position: absolute;
+        top: 37%;
+        left: -3%;
+        transform: rotate(90deg);
+  }
+
+  #secpic4 {
+      height: 150px;
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      opacity: 0.5;
+  }
+
+  #secpic7 {
+      height: 100px;
+      position: absolute;
+      top: 40%;
+      left: 45%;
+  }
+
+  #page5 h1 {
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: monospace;
+    display: none;
+}
+  #section2 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec2pic1 {
+
+    height: 215px;
+        margin: 0 112px;
+        position: relative;
+  }
+  #sec2pic2{
+    position: relative;
+        height: 325px;
+        top: -406px;
+        left: 410px;
+  }
+  #text {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text h1 {
+    position: relative;
+        top: -219px;
+        left: 7%;
+        /* margin: 15px 19px; */
+        font-size: 22px;
+    }
+ 
+
+  #text p {
+    position: relative;
+        top: -209px;
+        left: 1%;
+        margin: 0;
+        font-size: 12px;
+  }
+
+  #btun {
+    position: relative;
+        top: -198px;
+        left: -164px;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+
+  }
+
+  #section3 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head1 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec3pic1 {
+
+    height: 215px;
+        margin: 0 112px;
+        position: relative;
+  }
+  #sec3pic2{
+    position: relative;
+        height: 325px;
+        top: -406px;
+        left: 410px;
+        /* margin: 0 100px; */;
+  }
+  #text2 {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text2 h1 {
+    position: relative;
+        top: -219px;
+        left: 7%;
+        /* margin: 15px 19px; */
+        font-size: 22px;
+    }
+ 
+
+  #text2 p {
+    position: relative;
+        top: -209px;
+        left: 1%;
+        margin: 0;
+        font-size: 12px;
+  }
+
+  #btun1 {
+    position: relative;
+        top: -198px;
+        left: -164px;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+
+  }
+
+  #section4 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head2 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec4pic1 {
+
+    height: 215px;
+        margin: 0 112px;
+        position: relative;
+  }
+  #sec4pic2{
+    position: relative;
+        height: 325px;
+        top: -406px;
+        left: 410px;
+        /* margin: 0 100px; */;
+  }
+  #text3 {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text3 h1 {
+    position: relative;
+        top: -219px;
+        left: 7%;
+        /* margin: 15px 19px; */
+        font-size: 22px;
+    }
+ 
+
+  #text3 p {
+    position: relative;
+        top: -209px;
+        left: 1%;
+        margin: 0;
+        font-size: 12px;
+  }
+
+  #btun2 {
+    position: relative;
+        top: -198px;
+        left: -164px;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+
+  }
+
+  #section5 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head3 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+  #sec5pic1{
+    position: relative;
+        height: 220px;
+        top: 181px;
+        /* margin-left: 170px; */
+        border-radius: 20px;
+        left: -29%;
+  }
+  #sec5pic2{
+    position: relative;
+    height: 220px;
+    top: -174px;
+    /* margin-left: 170px; */
+    border-radius: 20px;
+    left: -30%
+  }
+
+  #btun3 {
+    position: relative;
+        top: -198px;
+        left: 0;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+  }
+}
+
+
+
+
+@media (max-width: 430px) {
+
+body{
+  overflow-x: hidden;
+}
+
+.a {
+font-size: 20px;
+font-weight: 800;
+}
+  #section1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 30%;
+  }
+
+  #section1 h1 {
+      font-size: 30px;
+      /* top: -30%;
+      left: 30%; */
+      margin-top: 100px;
+      margin-left: 124px;
+      font-weight: 800;
+  }
+
+  #secpic1 {
+      height: 100px;
+      position: absolute;
+      top: 10%;
+      left: 79%;
+      transform: rotate(70deg);
+  }
+
+  #secpic2 {
+      height: 100px;
+      position: absolute;
+      top: 10%;
+      left: -4%;
+      transform: rotate(90deg);
+  }
+
+  #secpic3 {
+      height: 100px;
+      position: absolute;
+      top: 27%;
+      left: 76%;
+  }
+
+  #secpic6 {
+      height: 100px;
+      position: absolute;
+      top: 25%;
+      left: -5%;
+      transform: rotate(90deg);
+  }
+
+  #secpic4 {
+      height: 100px;
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      opacity: 0.5;
+  }
+
+  #secpic7 {
+      height: 100px;
+      position: absolute;
+      top: 40%;
+      left: 45%;
+  }
+
+  #section2 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #page5 h1 {
+    font-size: 20vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: monospace;
+    display: none;
+}
+  #head h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec2pic1 {
+
+    height: 200px;
+        margin: 0 100px;
+        position: relative;
+  }
+  #sec2pic2{
+    position: relative;
+        height: 350px;
+        top: -160px;
+        left: 0;
+        /* margin: 0 100px; */;
+  }
+  #text {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text h1 {
+    position: relative;
+        top: -207px;
+        left: 27%;
+        /* margin: 15px 19px; */
+        font-size: large;
+    }
+ 
+
+  #text p {
+    position: relative;
+    top: -207px;
+    left: 12%;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  #btun {
+    position: relative;
+        top: -150px;
+        left: 0;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+  }
+
+  #section3 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head1 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec3pic1 {
+
+    height: 200px;
+        margin: 0 100px;
+        position: relative;
+  }
+  #sec3pic2{
+    position: relative;
+        height: 350px;
+        top: -160px;
+        left: 0;
+        /* margin: 0 100px; */;
+  }
+  #text2 {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text2 h1 {
+    position: relative;
+        top: -207px;
+        left: 27%;
+        /* margin: 15px 19px; */
+        font-size: large;
+    }
+ 
+
+  #text2 p {
+    position: relative;
+    top: -207px;
+    left: 12%;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  #btun1 {
+    position: relative;
+        top: -150px;
+        left: 0;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+  }
+
+  #section4 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 85%;
+  }
+
+  #head2 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec4pic1 {
+
+    height: 200px;
+        margin: 0 100px;
+        position: relative;
+  }
+  #sec4pic2{
+    position: relative;
+        height: 350px;
+        top: -160px;
+        left: 0;
+        /* margin: 0 100px; */;
+  }
+  #text3 {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+  }
+
+  #text3 h1 {
+    position: relative;
+        top: -207px;
+        left: 27%;
+        /* margin: 15px 19px; */
+        font-size: large;
+    }
+ 
+
+  #text3 p {
+    position: relative;
+    top: -207px;
+    left: 12%;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  #btun2 {
+    position: relative;
+        top: -150px;
+        left: 0;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+  }
+
+  #section5 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 114%
+  }
+
+  #head3 h1 {
+    font-size: 30px;
+        position: relative;
+  }
+
+  #sec5pic1{
+    height: 201px;
+        margin-left: 149px;
+        border-radius: 20px;
+        position: relative;
+        top: 5px;
+}
+
+#sec5pic2{
+        position: relative;
+        height: 200px;
+        top: 0;
+        margin-left: 158px;
+        border-radius: 20px;
+}
+
+  #btun3 {
+    position: relative;
+        top: 0px;
+        left: 0;
+        width: 200px;
+        font-size: small;
+        height: 30px;
+        align-items: center;
+
+
+  }
+
+  .ans {
+    margin-left: 75%;
+}
+}
+
+</style>
+
+</head>
+<body>
+     <!-- Navbar start -->
+     <nav class="navbar navbar-expand-lg nmn">
+        <div class="container-fluid ">
+          <a class="navbar-brand a" href="./misa.html"><span style="color: #447804;">Misa</span> Garden</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ba">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./misa.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./plant.html">Plants</a></li>
+                  <li><a class="dropdown-item" href="./flower.html">Flower</a></li>
+                  <li><a class="dropdown-item" href="./seeds.html">Seeds</a></li>
+                  <li><a class="dropdown-item" href="./tools.html">Tools</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+            
+            <a class="btn btn-primary baat" href="./login.html" role="button"> Login </a>
+            <a class="btn btn-primary baat" href="./signup.html" role="button"> Sign Up</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar End -->
+
+<!-- Section 1 start -->
+ <div id="section1">
+    <h1><span style="color: #447804;">Misa</span> Garden</h1>
+    <img id="secpic1" class="img-fluid" src="./Untitled_design__2_-removebg-preview.png" alt="">
+    <img id="secpic2" class="img-fluid" src="./Untitled_design__1_-removebg-preview.png" alt="">
+    <img id="secpic3" class="img-fluid" src="./Untitled_design__3_-removebg-preview.png" alt="">
+    <img id="secpic4" class="img-fluid" src="./Untitled_design__4_-removebg-preview.png" alt="">
+   
+    <img id="secpic6" class="img-fluid" src="./Untitled_design__6_-removebg-preview.png" alt="">
+    <img id="secpic7" class="img-fluid" src="./Untitled_design__-removebg-preview.png" alt="">
+ </div>
+ <!-- section 1 end -->
+
+ <!-- section 2 start -->
+  <div id="section2">
+    <div id="head">
+      <h1>Plants</h1>
+    </div>
+    <div id="text">
+      <img id="sec2pic1" src="./board.png" height="400px">
+      <h1>why we need plants</h1>
+      <p>Oxygen Production Through photosynthesis, <br> plants convert carbon dioxide into oxygen, <br>  which is crucial for the survival of most living organisms, including humans.</p>
+    </div>
+
+    <img id="sec2pic2" src="./plant1.png" height="500px">
+    <a id="btun" class="btn btn-primary baat" href="./plant.html" role="button">Explore more ></a>
+  </div>
+  <!-- section 2 end -->
+
+  <!-- section 3 start -->
+  <div id="section3">
+    <div id="head1">
+      <h1>Flowers</h1>
+    </div>
+    <div id="text2">
+      <img id="sec3pic1" src="./board.png" height="400px">
+      <h1>what's help flowers?</h1>
+      <p>Pollination: Flowers attract pollinators <br> such as bees, butterflies, birds, and other insects with their <br> colors, scents, and nectar.</p>
+    </div>
+
+    <img id="sec3pic2" src="./Spring_Instagram_Post-removebg-preview.png" height="500px">
+    <a id="btun1" class="btn btn-primary baat" href="./flower.html" role="button">Explore more ></a>
+  </div>
+  <!-- section 3 end -->
+
+ <!-- section 4 start -->
+ <div id="section4">
+  <div id="head2">
+    <h1>Seeds</h1>
+  </div>
+  <div id="text3">
+    <img id="sec4pic1" src="./board.png" height="400px">
+    <h1>How to save seeds ?</h1>
+    <p>Select seeds from healthy, vigorous plants <br> that are disease-free and have desirable traits (such as <br> good fruit size or flower color).</p>
+  </div>
+
+  <img id="sec4pic2" src="./Grow_up_Pot_Reminder_Quote_Instagram_Post-removebg-preview.png" height="500px">
+  <a id="btun2" class="btn btn-primary baat" href="./seeds.html" role="button">Explore more ></a>
+</div>
+<!-- section 4 end -->
+
+<div id="page5">
+  <h1>Plants*Flowers*Seeds*pots</h1>
+</div>
+
+<!-- section 5 start -->
+   <div id="section5">
+    <div id="head3">
+      <h1>How to grow at home</h1>
+    </div>
+      <video id="sec5pic1"  src="./Green Nature Thanks For Watching Youtube Video.mp4" autoplay></video>
+      <video id="sec5pic2" src="./tree.mp4" autoplay></video>
+   <a id="btun3" class="btn btn-primary baat" href="./video.html" role="button">Explore more ></a>
+</div>
+<!-- section 5 end -->
+
+</div>
+<a class="btn btn-primary ans" onclick="scrollTopAnimated()" href="#" role="button">Scroll UP</a>
+</div>
+
+ <!-- Footer -->
+ <footer class="text-center text-lg-start text-muted" style="background-color: #305700; color: #ffffff;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: #ffffff;">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Right -->
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links -->
+  <section>
+    <div class="container text-center text-md-start mt-5" style="color: #ffffff;">
+      <div class="row mt-3">
+        <!-- Grid column 1: Company Info -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Misa Garden
+          </h6>
+          <p>
+            Misa Garden is your one-stop destination for all your gardening needs. We offer a wide variety of plants, tools, and gardening supplies to help you create the perfect garden.
+          </p>
+        </div>
+
+        <!-- Grid column 2: Products -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Gardening Products
+          </h6>
+          <p><a href="#!" class="text-reset">Plants</a></p>
+          <p><a href="#!" class="text-reset">Flowers</a></p>
+          <p><a href="#!" class="text-reset">Seeds</a></p>
+          <p><a href="#!" class="text-reset">Tools</a></p>
+        </div>
+
+        <!-- Grid column 3: Useful Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p><a href="#!" class="text-reset">Pricing</a></p>
+          <p><a href="#!" class="text-reset">Settings</a></p>
+          <p><a href="#!" class="text-reset">Orders</a></p>
+          <p><a href="#!" class="text-reset">Help</a></p>
+        </div>
+
+        <!-- Grid column 4: Contact Info -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> North Nazimabad, Karachi, Pakistan</p>
+          <p><i class="fas fa-envelope me-3"></i> info@misagarden.com</p>
+          <p><i class="fas fa-phone me-3"></i> + 92 3138116796 </p>
+          <p><i class="fas fa-print me-3"></i> + 92 3138116796</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Links -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: #fff;">
+    © 2023 Misa Garden. All rights reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="./misa.js" id="misaa"></script>
+ 
+</body>
+<script>
+  function unloadScript() {
+    if (window.innerWidth <= 900) {
+        const script = document.getElementById('misaa');
+        if (script) {
+            script.parentNode.removeChild(script);
+        }
+    }
+}
+
+// Call the function on load and resize
+window.addEventListener('load', unloadScript);
+window.addEventListener('resize', unloadScript);
+
+ </script>
+</html>

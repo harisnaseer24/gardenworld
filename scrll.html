@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        How to animate scrollTop with jQuery? 
+    </title> 
+      
+    <script src= 
+        "https://code.jquery.com/jquery-3.4.1.min.js"> 
+    </script> 
+      
+    <style> 
+        .scrollable { 
+            background-color: green; 
+            height: 1000px; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        GeeksForGeeks 
+    </h1> 
+      
+    <b> 
+        How to animate scrollTop with jQuery? 
+    </b> 
+      
+    <p> 
+        Click on the button to scroll 
+        to the top of the page. 
+    </p> 
+      
+    <p class="scrollable"> 
+        This is a large div to 
+        help in scrolling. 
+    </p> 
+      
+    <button onclick="scrollTopAnimated()"> 
+        Scroll To Top 
+    </button> 
+      
+    <script type="text/javascript"> 
+        function scrollTopAnimated() { 
+            $("html, body").animate({ scrollTop: "0" }); 
+        } 
+    </script> 
+</body> 
+  
+</html> 

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+    background-color: #EEF1F8;
+    margin: 0;
+    padding: 0;
+}
+
+a { text-decoration: none; }
+
+.container {
+    width: 72%;
+    height: 90%;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 30px rgba(66, 57, 238, .2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Blue\ Dark\ Professional\ Geometric\ Business\ Project\ Presentation\ .jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-up {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    
+    color: #447804;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text {
+    width: 350px;
+    height: 50px;
+    box-shadow: 2px 6px 18px rgba(66, 57, 238, .3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+    .text input {
+        height: 40px;
+        width: 80%;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .text img { margin-left: 20px; }
+
+.conditions {
+    font-family: myriad pro;
+    color: #BBC1CB;
+    font-size: 14px;
+}
+
+    .conditions a { color: #447804; font-weight: 500; margin: 10px; }
+
+.terms { display: flex; align-items: center; }
+
+button {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(-30deg, #1f3504, #447804 55%);
+    box-shadow: 2px 6px 16px rgba(66, 57, 238, .3);
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+    button:active { transform: scale(1.1); }
+
+.text-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .text-container p {
+        width: 70%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .text-container h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2D2C2C;
+        line-height: 20px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .aa{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+    .as{
+        font-size: 13px;
+        margin: 10px 5px;
+        width: 50px;
+
+    }
+
+@media screen and (max-width: 1080px) {
+    .text-container { display: none;}
+    .container { height: 90%; }
+}
+
+@media screen and (max-width: 670px) {
+    .container { width: 85%; height: 80%; }
+}
+
+@media screen and (max-width: 500px) {
+    .text { width: 300px; }
+    .container { width: 90%; height: 80%;}
+    .as {width: 60px;}
+}
+
+@media screen and (max-width: 420px) {
+    .container { width: 95%; height: 80%;}
+    .heading { text-align: center; }
+    .conditions { text-align: center; }
+    input[type="checkbox"] { margin-right: 5px; }
+    .text {width: 280px; }
+    .as {width: 40px;}
+    .aa {font-size: 10px;}
+}
+    </style>
+</head>
+<body>
+
+<button class="as" type="submit"><a class="aa" href="./misa.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+    <div class="container">
+        <div class="sign-up">
+            <h1 class="heading">Sign Up</h1>
+
+            <div class="text">
+                <img src="https://i.postimg.cc/1zgS8WTF/user.png" alt="icon" height="20">
+                <input type="text" id="username" placeholder="Name">
+            </div>
+
+            <div class="text">
+                <img src="https://i.postimg.cc/DZBPRgvC/email.png" alt="icon" height="12">
+                <input type="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="text">
+                <img src="https://i.postimg.cc/Nj5SDK4q/password.png" alt="icon" height="20">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="text">
+                <img src="https://i.postimg.cc/Nj5SDK4q/password.png" alt="icon" height="20">
+                <input type="password" id="confirm-password" placeholder="Repeat Password">
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" >
+                <p class="conditions">I read and agree to <a href="#">terms & conditions</a></p>
+            </div>
+
+            <button type="submit" onclick="signUp()">CREATE ACCOUNT</button>
+            <p class="conditions">Already have an account? <a href="./login.html">login</a></p>
+
+        </div>
+
+        <div class="text-container">
+            <h1><Span style="color: #447804;">Misa</Span> Garden</h1>
+            <p>Welcome, please fill in the blanks for sign up</p>
+        </div>
+    </div>
+
+    <script>
+
+        function signUp(){
+
+            let users= JSON.parse(localStorage.getItem("users")) || [];
+
+            let uuser =document.getElementById("username").value;
+            let uemail =document.getElementById("email").value;
+            let upassword =document.getElementById("password").value;
+            let upasswordR =document.getElementById("confirm-password").value;
+
+            if(uuser === '' || uemail === '' || upassword === '' || upasswordR === ''){
+                alert("Please fill empty space :");
+            }else{
+                if(upassword !== upasswordR){
+                    alert("Please correct the password");
+                }else{
+                    let user={
+                name : uuser,
+                email : uemail,
+                password : upassword,
+                cPassword : upasswordR,
+            }
+
+            users.push(user);
+            let jsonUser = JSON.stringify(users);
+            localStorage.setItem("users",jsonUser);
+            alert("Registeration Sucess, now login please !");
+            // console.log(users);
+            window.location.href="login.html";
+
+                }
+                
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

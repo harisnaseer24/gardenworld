@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowers bac/misagarden.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+    button{
+        width: 110px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .baat:hover{
+      background-color: #264600;
+    }
+    .btn{
+        background-color: #447804;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .ba{
+        margin-left: 200px;
+    }
+    .a{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .nav-item{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .bag{
+        background-color: #305700;
+        margin-top: 20px;
+    }
+    .bf{
+        color: white;
+    }
+ 
+    .ras{
+      margin: 30px 0;
+    }
+
+    .swiper {
+     width: 90%;
+     height: 80%;
+     border-radius: 12px;
+     margin-top: 50px;
+   }
+
+   .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+    .card{
+      width: 250px;
+      height: 400px;
+      margin: 20px;
+      background-color: #F4FFF2;
+      transition: all 0.4s linear;
+    }
+    .card:hover{
+      box-shadow: rgba(120, 253, 160, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+    }
+    .bac{
+      background-color: rgb(255, 240, 243);
+      transition: all 0.4s linear;
+    }
+    .bac:hover{
+      box-shadow: rgba(252, 131, 242, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .card-img-top{
+      height: 180px;
+      width: 180px;
+      margin-left: 35px;
+    }
+    .plant-head h1{
+      font-size: 60px;
+      font-weight: bold;
+      text-align: center;
+      margin: 70px;
+    }
+    .baat:hover{
+      background-color: #264600;
+    }
+    .plant{
+      display: flex;
+      justify-content: center;
+
+    }
+    .baat{
+      width: 120px;
+      margin-left: 10px;
+      height: 40px;
+    }
+    .ans{
+      margin-left: 90%;
+    }
+
+     /* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: white;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar button {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #ddd;
+}
+
+
+#quantityDisplay {
+    margin: 0 10px;
+}
+
+.sidebar button {
+    margin: 5px;
+}
+
+/* Style the content when sidebar is open */
+.sidebar.open {
+    width: 250px;
+}
+
+
+.cart-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    /* #cartIcon {
+      font-size: 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50%;
+    } */
+
+    #cartIcon:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 440px) {
+      .ans{
+      margin-left: 75%;
+    }
+
+    .a {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.plant img{
+display: none;
+}
+    .plant-head h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px;
+}
+.bac {
+    margin-left: auto;
+    margin-right: auto;
+}
+    }
+</style>
+</head>
+<body>
+     <!-- Navbar start -->
+     <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand a" href="./misa.html"><span style="color: #447804;">Misa</span> Garden</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ba">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./misa.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./plant.html">Plants</a></li>
+                  <li><a class="dropdown-item" href="./flower.html">Flower</a></li>
+                  <li><a class="dropdown-item" href="./seeds.html">Seeds</a></li>
+                  <li><a class="dropdown-item" href="./tools.html">Tools</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+            
+            <a class="btn btn-primary baat" href="./login.html" role="button"> Login </a>
+            <a class="btn btn-primary baat" href="./signup.html" role="button"> Sign Up</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar End -->
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./Hello March Flower Banner.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./Hello March Flower Banner (1).jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./Hello March Flower Banner (2).jpg" alt=""></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+
+<!-- Shopping Cart Icon -->
+<div class="cart-icon">
+  <button id="cartIcon" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
+    <i class="fas fa-shopping-cart"></i> Cart (<span id="cartCount">0</span>)
+  </button>
+</div>
+
+<!-- Modal for Cart Preview -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cartItems">
+        <!-- Cart items will be displayed here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="buyButton">Buy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Section: Plants -->
+ <div class="plant">
+    <div class="leav">
+      <img src="./flowe-removebg-preview.png" height="200px">
+    </div>
+    <div class="plant-head">
+      <h1>Flowers</h1>
+    </div>
+    <div class="leav">
+      <img src="./flaw-removebg-preview.png" height="200px">
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rose Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Rose Flower" data-price="190"> to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__1_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tulip Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Tulip Flower" data-price="190"> to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__2_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Daffodil Flower</h5><p class="card-text">⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Daffodil Flower" data-price="190"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design___-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sunflower</h5><p class="card-text">⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Sunflower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__3_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Orchid Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Orchid Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__4_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lily Flower</h5><p class="card-text">⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Lily Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__5_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chrysanthemum Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Chrysanthemum Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+          <div class="card bac">
+            <img src="/flower/Untitled_design__6_-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lavender Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+              <p class="card-text">| | | |</p>
+                        <p class="card-text"><b>RS-190</b></p>
+              <a href="#" class="btn btn-primary add-to-cart" data-title="Lavender Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__7_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jasmine Flower</h5><p class="card-text">⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary  add-to-cart" data-title="Jasmine Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__8_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Daisy Flower</h5><p class="card-text">⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Daisy Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__9_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Peony Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Peony Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__10_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Camellia Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Camellia Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__11_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Poppy Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Poppy Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__12_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Marigold flower</h5><p class="card-text">⭐⭐⭐</p>
+                <p class="card-text">Plamts benefit is great</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Marigold Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__13_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Begonia Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">Plamts benefit is great</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Begonia Flower" data-price="190"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__14_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Violet Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Violet Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__15_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aster Flower</h5><p class="card-text">⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Aster Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__16_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Geranium Flower</h5><p class="card-text">⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Geranium Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__17_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hibiscus Flower</h5><p class="card-text">⭐⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Hibiscus Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 ma">
+            <div class="card bac">
+              <img src="/flower/Untitled_design__18_-removebg-preview.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Iris Flower  </h5><p class="card-text">⭐⭐⭐⭐</p>
+                <p class="card-text">| | | |</p>
+                          <p class="card-text"><b>RS-190</b></p>
+                <a href="#" class="btn btn-primary add-to-cart" data-title="Iris Flower" data-price="190" ><i class="fas fa-cart-plus"></i> Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <a class="btn btn-primary ans" onclick="scrollTopAnimated()" href="#" role="button">Scroll UP</a>
+      </div>
+      <!-- Sidebar -->
+    <div id="cartSidebar" class="sidebar">
+      <div class="sidebar-content">
+          <h2>Shopping Cart</h2>
+          <p><b id="productName">Product</b></p>
+          <p><b>Price:</b> RS-<span id="productPrice">0</span></p>
+          
+          <!-- Quantity controls -->
+          <p><b>Quantity:</b></p>
+          <button onclick="decrementQuantity()">-</button>
+          <span id="quantityDisplay">1</span>
+          <button onclick="incrementQuantity()">+</button>
+          
+          <br><br>
+          <button onclick="closeSidebar()">Close</button>
+      </div>
+  </div>
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start text-muted" style="background-color: #305700; color: #ffffff;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: #ffffff;">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Right -->
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links -->
+  <section>
+    <div class="container text-center text-md-start mt-5" style="color: #ffffff;">
+      <div class="row mt-3">
+        <!-- Grid column 1: Company Info -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Misa Garden
+          </h6>
+          <p>
+            Misa Garden is your one-stop destination for all your gardening needs. We offer a wide variety of plants, tools, and gardening supplies to help you create the perfect garden.
+          </p>
+        </div>
+
+        <!-- Grid column 2: Products -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Gardening Products
+          </h6>
+          <p><a href="#!" class="text-reset">Plants</a></p>
+          <p><a href="#!" class="text-reset">Flowers</a></p>
+          <p><a href="#!" class="text-reset">Seeds</a></p>
+          <p><a href="#!" class="text-reset">Tools</a></p>
+        </div>
+
+        <!-- Grid column 3: Useful Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p><a href="#!" class="text-reset">Pricing</a></p>
+          <p><a href="#!" class="text-reset">Settings</a></p>
+          <p><a href="#!" class="text-reset">Orders</a></p>
+          <p><a href="#!" class="text-reset">Help</a></p>
+        </div>
+
+        <!-- Grid column 4: Contact Info -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> North Nazimabad, Karachi, Pakistan</p>
+          <p><i class="fas fa-envelope me-3"></i> info@misagarden.com</p>
+          <p><i class="fas fa-phone me-3"></i> + 92 3138116796 </p>
+          <p><i class="fas fa-print me-3"></i> + 92 3138116796</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Links -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: #fff;">
+    © 2023 Misa Garden. All rights reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
+    let cart = {}; // Store items in cart
+
+// Add items to the cart when "Add to Cart" is clicked
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', function () {
+    let title = this.getAttribute('data-title');
+    let price = parseInt(this.getAttribute('data-price'));
+
+    // If item already exists, increase quantity; otherwise, add it to the cart
+    if (cart[title]) {
+      cart[title].quantity += 1;
+    } else {
+      cart[title] = {
+        quantity: 1,
+        price: price
+      };
+    }
+
+    updateCart();
+  });
+});
+
+// Update cart icon and modal content
+function updateCart() {
+  let cartItemsHTML = '';
+  let totalAmount = 0;
+  let itemCount = 0;
+
+  // Loop through each item in the cart
+  for (let title in cart) {
+    let item = cart[title];
+    cartItemsHTML += `
+      <div class="cart-item">
+        <h5>${title}</h5>
+        <p>Price: RS-${item.price}</p>
+        <p>
+          Quantity: 
+          <button class="btn btn-sm btn-info increment" data-title="${title}">+</button>
+          ${item.quantity}
+          <button class="btn btn-sm btn-info decrement" data-title="${title}">-</button>
+        </p>
+        <p>Total: RS-${item.price * item.quantity}</p>
+        <hr>
+      </div>
+    `;
+    totalAmount += item.price * item.quantity;
+    itemCount += item.quantity; // Keep track of total items
+  }
+
+  cartItemsHTML += `<h4>Total Amount: RS-${totalAmount}</h4>`;
+  document.getElementById('cartItems').innerHTML = cartItemsHTML;
+  document.getElementById('cartCount').innerText = itemCount; // Update cart icon count
+}
+
+// Handle increment and decrement buttons in the modal
+document.getElementById('cartModal').addEventListener('click', function (e) {
+  if (e.target.classList.contains('increment')) {
+    let title = e.target.getAttribute('data-title');
+    cart[title].quantity += 1;
+    updateCart();
+  }
+
+  if (e.target.classList.contains('decrement')) {
+    let title = e.target.getAttribute('data-title');
+    if (cart[title].quantity > 1) {
+      cart[title].quantity -= 1;
+      updateCart();
+    }
+  }
+});
+
+// Handle "Buy" button click
+document.getElementById('buyButton').addEventListener('click', function () {
+  alert("Proceeding to checkout!");
+  cart = {}; // Empty the cart after purchase
+  updateCart(); // Refresh cart
+  let modal = bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+  modal.hide(); // Hide modal after buying
+}); 
+
+function scrollTopAnimated() { 
+            $("html, body").animate({ scrollTop: "0" }); 
+        }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        #section2 {
+            width: 100%;
+            height: 100%;
+            background-color: #f7ffec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        #head h1 {
+            font-size: 40px;
+            font-weight: 800;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #sec2pic1, #sec2pic2 {
+            width: 80%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        #text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+        }
+
+        #text h1 {
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        #text p {
+            margin: 20px 0;
+        }
+
+        #btun {
+            width: 200px;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            #section2 {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            #head h1 {
+                font-size: 60px;
+                position: absolute;
+                top: 110%;
+                left: 40%;
+                padding: 30px;
+            }
+
+            #sec2pic1, #sec2pic2 {
+                width: auto;
+                margin: 0;
+            }
+
+            #text {
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            #text h1 {
+                position: absolute;
+                top: 131%;
+                left: 12%;
+                margin: 0;
+            }
+
+            #text p {
+                position: absolute;
+                top: 147%;
+                left: 5%;
+                margin: 0;
+            }
+
+            #btun {
+                position: absolute;
+                top: 200%;
+                left: 38%;
+                width: 300px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- section 2 start -->
+    <div id="section2">
+        <div id="head">
+            <h1>Plants</h1>
+        </div>
+        <div id="text">
+            <img id="sec2pic1" src="./board.png" alt="Board Image">
+            <h1>why we need plants</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Iusto assumenda in voluptatibus id quidem <br> minima cupiditate explicabo totam repudiandae, enim <br> laudantium eos, labore eius, molestiae modi accusantium <br> ducimus? Nostrum, minima?</p>
+        </div>
+        <img id="sec2pic2" src="./plant1.png" alt="Plant Image">
+        <a id="btun" class="btn btn-primary baat" href="./signup.html" role="button">Explore more ></a>
+    </div>
+    <!-- section 2 end -->
+</body>
+</html>
+
